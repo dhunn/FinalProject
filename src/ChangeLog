@@ -4,3 +4,7 @@ BinHeap Class Created 4/18/17
 Queue Class Created 4/18/17
 Node Class Created 4/18/17
 Changed Node Class to person 4/18/17
+added to the Queue class:
+	add(Person people[], Person me)
+	Person peek()
+	Person remove()
