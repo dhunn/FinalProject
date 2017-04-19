@@ -23,12 +23,12 @@ public class Queue {
 		}
 	}
 	public Person peek(){
-		return people[0] != null ? people[0]: null;
+		return people[1] != null ? people[0]: null;
 	}
 	public Person remove(){
 		Person person= null;
-		if(people[0]!= null){
-			person = people[0];
+		if(people[1]!= null){
+			person = people[1];
 			 people= heap.remove(people);
 			 return person;
 		}else{

@@ -1,10 +1,18 @@
-Change log Created 4/12/17
-Project and Main Class Created 4/12/17
-BinHeap Class Created 4/18/17
-Queue Class Created 4/18/17
-Node Class Created 4/18/17
-Changed Node Class to person 4/18/17
+4/12/17:
+Change log Created 
+Project and Main Class Created 
+BinHeap Class Created 
+Queue Class Created 
+Node Class Created 
+Changed Node Class to person
 added to the Queue class:
 	add(Person person, Person me)
 	Person peek()
 	Person remove()
+4/19/17:
+Changed Heap class:
+	Added add(Person pArray[],Person person, Person me, int nEle)
+	Added remove(Person[] people)
+	Added perculateUp(int nEle)
+	Added swap(int current, int halfCurrent)
+Reformatted ChangeLog for easier readability

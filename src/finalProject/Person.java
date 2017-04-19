@@ -11,6 +11,7 @@ public class Person {
 	private char seeking;
 	private int heightInches;
 	private String eyeColor;
+	private int compatability;
 	
 	public Person(){
 		
@@ -98,6 +99,12 @@ public class Person {
 	private int clearByte(int b, int pos){
 		b &= ~(1 << pos);
 		return b;
+	}
+	public void setCompatability(int num){
+		this.compatability =num;
+	}
+	public int getCompatability(){
+		return this.compatability;
 	}
 	public int compairTo(Person p){
 		int same = 0;
