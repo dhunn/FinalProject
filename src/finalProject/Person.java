@@ -12,9 +12,11 @@ public class Person {
 	private int heightInches;
 	private String eyeColor;
 	
+	public Person(){
+		
+	}
 	public Person(String fName, String lName, int age, char sex, int zipCode, String race, char seeking,
 			int heightInches, String eyeColor) {
-		super();
 		this.fName = fName;
 		this.lName = lName;
 		this.age = age;

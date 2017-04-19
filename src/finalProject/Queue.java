@@ -14,12 +14,12 @@ public class Queue {
 	public void add(Person person, Person me){
 		
 		if(size>=nEle){
-		 people=heap.add(person, me, nEle);
+		 people=heap.add(people,person, me, nEle);
 		 nEle++;
 		}else{
 			people =Arrays.copyOf(people, (int)(size*1.5));
 			size *= 1.5;
-			people = heap.add(person, me, nEle);
+			people = heap.add(people,person, me, nEle);
 		}
 	}
 	public Person peek(){
