@@ -1,4 +1,4 @@
-4/12/17:
+4/12/17: 30 min
 Change log Created 
 Project and Main Class Created 
 BinHeap Class Created 
@@ -9,10 +9,14 @@ added to the Queue class:
 	add(Person person, Person me)
 	Person peek()
 	Person remove()
-4/19/17:
+4/19/17: 2 hours
 Changed Heap class:
 	Added add(Person pArray[],Person person, Person me, int nEle)
 	Added remove(Person[] people)
 	Added perculateUp(int nEle)
 	Added swap(int current, int halfCurrent)
 Reformatted ChangeLog for easier readability
+4/25/2017:
+	remove heap class
+	remove queue class
+	restart person
