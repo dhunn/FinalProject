@@ -17,7 +17,7 @@ public class Attribute {
 	public static final int Race_NativeAmerican = Brown_Eyes << 12;
 	public static final int	Race_Black = Brown_Eyes << 13;
 	public static final int Race_PacificIslander =Brown_Eyes << 14;
-	public static final int Sex = Brown_Eyes << 15; // if set to its male or 1 if not set it is 0 or female cause of the naughty bits
+	public static final int Sex = Brown_Eyes << 15; // 1 for male 0 for female cause of the naughty bits
 	public static final int Corrective_Lenses = Brown_Eyes << 16; // 1 is uses lenses
 	public static final int Ethnic_Arabs = Brown_Eyes << 17;
 	public static final int Ethnic_Hispanic =Brown_Eyes << 18;
