@@ -34,19 +34,19 @@ public class Person {
 	public void setEyeColor(int num) {
 		switch (num) {
 		case 1:
-			this.attributes += Attribute.Brown_Eyes;
+			this.attributes |= Attribute.Brown_Eyes;
 			break;
 		case 2:
-			this.attributes += Attribute.Blue_Eyes;
+			this.attributes |= Attribute.Blue_Eyes;
 			break;
 		case 3:
-			this.attributes += Attribute.Green_Eyes;
+			this.attributes |= Attribute.Green_Eyes;
 			break;
 		case 4:
-			this.attributes += Attribute.Hazel_Eyes;
+			this.attributes |= Attribute.Hazel_Eyes;
 			break;
 		case 5:
-			this.attributes += Attribute.Grey_Eyes;
+			this.attributes |= Attribute.Grey_Eyes;
 			break;
 
 		default:
@@ -57,19 +57,19 @@ public class Person {
 	public void setHairColor(int num){
 		switch (num) {
 		case 1:
-			this.attributes += Attribute.Brown_Hair;
+			this.attributes |= Attribute.Brown_Hair;
 			break;
 		case 2:
-			this.attributes += Attribute.Blond_Hair;
+			this.attributes |= Attribute.Blond_Hair;
 			break;
 		case 3:
-			this.attributes += Attribute.Red_Hair;
+			this.attributes |= Attribute.Red_Hair;
 			break;
 		case 4:
-			this.attributes += Attribute.Grey_Hair;
+			this.attributes |= Attribute.Grey_Hair;
 			break;
 		case 5:
-			this.attributes += Attribute.Black_Hair;
+			this.attributes |= Attribute.Black_Hair;
 			break;
 
 		default:
@@ -80,19 +80,19 @@ public class Person {
 	public void setRace(int num){
 		switch (num) {
 		case 1:
-			this.attributes += Attribute.Race_Asain;
+			this.attributes |= Attribute.Race_Asain;
 			break;
 		case 2:
-			this.attributes += Attribute.Race_Black;
+			this.attributes |= Attribute.Race_Black;
 			break;
 		case 3:
-			this.attributes += Attribute.Race_NativeAmerican;
+			this.attributes |= Attribute.Race_NativeAmerican;
 			break;
 		case 4:
-			this.attributes += Attribute.Race_White;
+			this.attributes |= Attribute.Race_White;
 			break;
 		case 5:
-			this.attributes += Attribute.Race_PacificIslander;
+			this.attributes |= Attribute.Race_PacificIslander;
 			break;
 
 		default:
@@ -102,7 +102,7 @@ public class Person {
 	public void setSex(int num){
 		switch (num) {
 		case 1:
-			this.attributes += Attribute.Sex;
+			this.attributes |= Attribute.Sex;
 			break;
 		case 2:
 			
@@ -115,7 +115,7 @@ public class Person {
 	public void setCorrectiveLenses(int num){
 		switch (num) {
 		case 1:
-			this.attributes += Attribute.Corrective_Lenses;
+			this.attributes |= Attribute.Corrective_Lenses;
 			break;
 		case 2:
 			
@@ -126,6 +126,67 @@ public class Person {
 		}
 	}
 
+	public void setEthnicity(int num){
+		switch (num) {
+		case 1:
+			this.attributes |= Attribute.Ethnic_Arabs;
+			break;
+		case 2:
+			this.attributes |= Attribute.Ethnic_Bengalis;
+			break;
+		case 3:
+			this.attributes |= Attribute.Ethnic_British;
+			break;
+		case 4:
+			this.attributes |= Attribute.Ethnic_English;
+			break;
+		case 5:
+			this.attributes |= Attribute.Ethnic_French;
+			break;
+		case 6:
+			this.attributes |= Attribute.Ethnic_German;
+			break;
+		case 7:
+			this.attributes |= Attribute.Ethnic_Han_Chinese;
+			break;
+		case 8:
+			this.attributes |= Attribute.Ethnic_Hispanic;
+			break;
+		case 9:
+			this.attributes |= Attribute.Ethnic_Japanese;
+			break;
+		case 10:
+			this.attributes |= Attribute.Ethnic_Javanese;
+			break;
+		case 11:
+			this.attributes |= Attribute.Ethnic_Punjabi;
+			break;
+		case 12:
+			this.attributes |= Attribute.Ethnic_Russian;
+			break;
+		default:
+			break;
+		}
+	}
+	
+	public void setFrancaLingua(int num){
+		switch (num) {
+		case 1:
+			this.attributes |= Attribute.Language_English;
+			break;
+		case 2:
+			this.attributes |= Attribute.Language_Mandarin;
+			break;
+		case 3:
+			this.attributes |= Attribute.Language_Spanish;
+			break;
+		
+		default:
+			break;
+		}
+		
+	}
+	
 	public String getfName() {
 		return fName;
 	}

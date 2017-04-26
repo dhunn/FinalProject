@@ -16,7 +16,8 @@ Changed Heap class:
 	Added perculateUp(int nEle)
 	Added swap(int current, int halfCurrent)
 Reformatted ChangeLog for easier readability
-4/25/2017:
+4/25/2017: 2.5 hours
 	remove heap class
 	remove queue class
 	restart person
+	created Attribute class
