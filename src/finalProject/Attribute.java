@@ -158,16 +158,16 @@ public class Attribute {
 
 			break;
 		default:
+
 			break;
 		}
 		if (pos == 15) {
-			if ((att & (1 << Sex)) != 1) {
+			if ((att & (1 << pos)) !=0) {
 				System.out.println("It's a boy");
-
-			}
-			if ((att & (1 << Sex)) != 0) {
+			}else{
 				System.out.println("It's a girl");
 			}
 		}
+
 	}
 }
