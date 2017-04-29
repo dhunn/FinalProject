@@ -21,3 +21,8 @@ Reformatted ChangeLog for easier readability
 	remove queue class
 	restart person
 	created Attribute class
+4/28/17 :
+	Added another Person constructor to the person class "Person(String fName, String lName, int age, int height)"
+	Building Random person generation in driver.
+	Created two Compare Class for Person
+	implemented compare methods for classes 

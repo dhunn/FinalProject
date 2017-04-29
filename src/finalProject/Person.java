@@ -4,10 +4,19 @@ public class Person {
 
 	private String fName;
 	private String lName;
-	private int attributes;
+	private int attributes = 0;
 	private int height;
 	private int age;
-
+	private int value;
+	Person() {
+	}
+	Person(String fName, String lName, int age, int height) {
+		this.fName = fName;
+		this.lName = lName;
+		this.age = age;
+		this.height = height;
+	}
+	
 	Person(String fName, String lName, int attributes, int age, int height) {
 		this.fName = fName;
 		this.lName = lName;
@@ -16,37 +25,49 @@ public class Person {
 		this.height = height;
 	}
 
-	public int compareTo(Person them) {
-		int count = 0;
-		int temp = them.getAttributes();
-		while (temp > 0) {
-			temp &= (temp - 1);
-			count++;
-		}
+	public void setValue(Person them) {
+		Integer count = 0;
+		int i = 0;
+		while(i<32){
+			if ((them.getAttributes() & (1 << i))== (this.attributes & (1 << i))) {
+				count++;
 
-		if (them.getAge() == this.age)
-			count++;
-		if (them.getHeight() == this.height)
-			count++;
-		return count;
+			}
+					
+			i++;
+		}
+		this.value = count;
 	}
 
+	public int compare(Person them) {
+		Integer count = 0;
+		int i = 0;
+		while(i<32){
+			if ((them.getAttributes() & (1 << i))== (this.attributes & (1 << i))) {
+				count++;
+
+			}
+					
+			i++;
+		}
+		return count;
+	}
 	public void setEyeColor(int num) {
 		switch (num) {
 		case 1:
-			this.attributes |= Attribute.Brown_Eyes;
+			this.attributes |= Attribute.Eyes_Blue;
 			break;
 		case 2:
-			this.attributes |= Attribute.Blue_Eyes;
+			this.attributes |= Attribute.Eyes_Brown;
 			break;
 		case 3:
-			this.attributes |= Attribute.Green_Eyes;
+			this.attributes |= Attribute.Eyes_Green;
 			break;
 		case 4:
-			this.attributes |= Attribute.Hazel_Eyes;
+			this.attributes |= Attribute.Eyes_Grey;
 			break;
 		case 5:
-			this.attributes |= Attribute.Grey_Eyes;
+			this.attributes |= Attribute.Eyes_Hazel;
 			break;
 
 		default:
@@ -57,19 +78,19 @@ public class Person {
 	public void setHairColor(int num){
 		switch (num) {
 		case 1:
-			this.attributes |= Attribute.Brown_Hair;
+			this.attributes |= Attribute.Hair_Black;
 			break;
 		case 2:
-			this.attributes |= Attribute.Blond_Hair;
+			this.attributes |= Attribute.Hair_Blond;
 			break;
 		case 3:
-			this.attributes |= Attribute.Red_Hair;
+			this.attributes |= Attribute.Hair_Brown;
 			break;
 		case 4:
-			this.attributes |= Attribute.Grey_Hair;
+			this.attributes |= Attribute.Hair_Grey;
 			break;
 		case 5:
-			this.attributes |= Attribute.Black_Hair;
+			this.attributes |= Attribute.Hair_Red;
 			break;
 
 		default:
@@ -225,6 +246,12 @@ public class Person {
 
 	public void setAge(int age) {
 		this.age = age;
+
+	
+	}
+	public int getValue() {
+		// TODO Auto-generated method stub
+		return value;
 	}
 
 }
