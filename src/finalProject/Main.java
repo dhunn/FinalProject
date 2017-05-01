@@ -8,11 +8,12 @@ public class Main {
 	public static void main(String[] args) throws InterruptedException {
 //		System.out.println(Attribute.Hair_Grey);
 		Random random = new Random(System.currentTimeMillis());
+		//priorty queue heap style
 		PriorityQueue<Person> queue;
 		Person personToCompairTo = new Person("John", "Doe", Attribute.Hair_Black | Attribute.Eyes_Grey | Attribute.Sex
 				| Attribute.Race_White | Attribute.Ethnic_German | Attribute.Language_English, 25, 74);
 		int male = Attribute.Sex;
-
+		//for name generation
 		String[] fNamesMale = { "John", "Joe", "Jim", "Dan", "Rod", "Jake", "Mike", "Dustin", "Adam", "Ben" };
 		String[] fNamesFemale = { "Jane", "Jessica", "Jenna", "Dannette", "Rebecca", "Jill", "Mickey", "Dusty",
 				"Alexis", "Betty" };
@@ -21,6 +22,9 @@ public class Main {
 //		System.out.println(fNamesMale.length);
 //		System.out.println(lNames.length);
 
+		/*
+		 * generate random people for weighted simularity test
+		 */
 		int rand = random.nextInt(10) +1 ;
 		queue = new PriorityQueue<Person>(rand, new ComparePersonByValue());
 		for (int i = 0; i < rand; i++) {
@@ -53,6 +57,9 @@ public class Main {
 			
 		}
 		
+		/*
+		 * wighted results
+		 */
 		showAtt(personToCompairTo);
 		System.out.println(Integer.toBinaryString(personToCompairTo.getAttributes()));
 		System.out.println();
@@ -67,7 +74,9 @@ public class Main {
 		System.out.println();
 		rand--;
 		}
-		
+		/*
+		 * person generation demography
+		 */
 		rand = random.nextInt(20) + 10;
 		queue = new PriorityQueue<Person>(rand, new Demography());
 		for (int i = 0; i < rand; i++) {
@@ -103,6 +112,10 @@ public class Main {
 		rand--;
 		}
 	}
+	
+	/*
+	 * shows set values using boilerplate
+	 */
 	public static void showAtt(Person per){
 		int j = 0;
 		while(j< 32){

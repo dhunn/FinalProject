@@ -1,7 +1,9 @@
 package finalProject;
 
 public class Attribute {
-
+/**
+ * boilerplate
+ */
 	public static final int Eyes_Brown = 1;
 	public static final int Eyes_Blue = 1 << 1;
 	public static final int Eyes_Green = 1 << 2;
@@ -36,6 +38,11 @@ public class Attribute {
 	public static final int Language_Mandarin = 1 << 30;
 	public static final int Language_Spanish = 1 << 31;
 
+	/**
+	 * shows set values of boilerplate in english
+	 * @param att
+	 * @param pos
+	 */
 	public static void att(int att, int pos) {
 
 		switch (att & (1 << pos)) {

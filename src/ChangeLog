@@ -26,4 +26,7 @@ Reformatted ChangeLog for easier readability
 	Building Random person generation in driver.
 	Created two Compare Class for Person
 	implemented compare methods for classes
-	Debugged 3 hours why boys were girls and vice versa had a second fName[random.nextInt()] and too blind to see it.
+	Debugging 3 hours why boys were girls and vice versa had a second fName[random.nextInt()] and too blind to see it.
+	5/1/17: 1 hour
+	comments
+	javadoc
